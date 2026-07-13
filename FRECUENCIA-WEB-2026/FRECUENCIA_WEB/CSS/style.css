@@ -231,19 +231,7 @@ border-color:#ff8700;
   background-repeat: no-repeat;
 }
 
-.banner-entrevistas {
-  background:
-    linear-gradient(
-      90deg,
-      rgba(5, 5, 5, 0.94),
-      rgba(78, 29, 130, 0.46)
-    ),
-    url("../IMAGENES/FONDOS/fondo-entrevistas.jpg");
 
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
 
 .banner-artistas {
   background:
@@ -304,37 +292,20 @@ border-color:#ff8700;
    PORTADA DE ENTREVISTAS
 ========================================= */
 
-.banner-entrevistas {
-  background:
-    linear-gradient(
-      90deg,
-      rgba(5, 5, 5, 0.95),
-      rgba(109, 40, 255, 0.40)
-    ),
-    url("../IMAGENES/FONDOS/FONDO\ ENTREVISTAS.jfif");
+.banner.banner-entrevistas{
 
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
+height:680px;
 
-.btn-portada {
-  display: inline-block;
-  background: linear-gradient(
-    90deg,
-    #6d28ff,
-    #ff8700,
-    #556b2f
-  );
-  color: #ffffff;
-  font-weight: 800;
-  padding: 14px 34px;
-  border-radius: 50px;
-  text-decoration: none;
-  transition: 0.3s;
-}
+background:
+linear-gradient(
+90deg,
+rgba(5,5,5,.95),
+rgba(109,40,255,.45)
+),
+url("/FRECUENCIA_WEB/JS/IMAGENES/FONDOS/FONDO\ ENTREVISTAS.jpg;
 
-.btn-portada:hover {
-  transform: scale(1.06);
-  box-shadow: 0 0 24px rgba(255, 135, 0, 0.45);
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+
 }
