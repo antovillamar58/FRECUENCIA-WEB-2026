@@ -213,3 +213,128 @@ border-color:#ff8700;
     font-size: 16px;
   }
 }
+/* =========================================
+   FONDOS DIFERENTES PARA CADA PÁGINA
+========================================= */
+
+.banner-inicio {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(5, 5, 5, 0.96),
+      rgba(5, 5, 5, 0.52)
+    ),
+    url("../IMAGENES/FONDOS/fondo-inicio.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.banner-entrevistas {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(5, 5, 5, 0.94),
+      rgba(78, 29, 130, 0.46)
+    ),
+    url("../IMAGENES/FONDOS/fondo-entrevistas.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.banner-artistas {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(5, 5, 5, 0.94),
+      rgba(255, 135, 0, 0.38)
+    ),
+    url("../IMAGENES/FONDOS/fondo-artistas.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.banner-noticias {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(5, 5, 5, 0.95),
+      rgba(85, 107, 47, 0.42)
+    ),
+    url("../IMAGENES/FONDOS/fondo-noticias.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.banner-antonados {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(5, 5, 5, 0.94),
+      rgba(255, 135, 0, 0.42)
+    ),
+    url("../IMAGENES/FONDOS/fondo-antonados.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.banner-redes {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(5, 5, 5, 0.95),
+      rgba(109, 40, 255, 0.40)
+    ),
+    url("../IMAGENES/FONDOS/fondo-redes.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* =========================================
+   PORTADA DE ENTREVISTAS
+========================================= */
+
+.banner-entrevistas {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(5, 5, 5, 0.95),
+      rgba(109, 40, 255, 0.40)
+    ),
+    url("../IMAGENES/FONDOS/FONDO\ ENTREVISTAS.jfif");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.btn-portada {
+  display: inline-block;
+  background: linear-gradient(
+    90deg,
+    #6d28ff,
+    #ff8700,
+    #556b2f
+  );
+  color: #ffffff;
+  font-weight: 800;
+  padding: 14px 34px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-portada:hover {
+  transform: scale(1.06);
+  box-shadow: 0 0 24px rgba(255, 135, 0, 0.45);
+}
