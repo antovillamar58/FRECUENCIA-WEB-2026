@@ -1,0 +1,215 @@
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'acumin-pro',Arial,sans-serif;background:#050505;color:#fff;overflow-x:hidden}
+/* =========================
+HEADER
+========================= */
+
+
+header{
+
+height:110px;
+
+position:fixed;
+
+top:0;
+
+width:100%;
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+padding:0 80px;
+
+z-index:1000;
+
+}
+
+.logos-container{
+
+display:flex;
+
+align-items:center;
+
+gap:5px;
+
+}
+
+.logo img{
+
+
+width:80px;
+
+height:auto;
+
+display:block;
+
+object-fit:contain;
+
+transform:translateY(16px);
+
+}
+
+
+
+
+.logo-canal img{
+
+
+width: 120px;
+
+height:auto;
+
+display:block;
+
+object-fit:contain;
+
+transform:translateY(8px);
+
+}
+
+
+nav ul{display:flex;gap:34px;list-style:none}nav a{color:#fff;text-decoration:none;font-weight:700;transition:.3s}nav a:hover{color:#ff8700}
+section{padding:90px 70px}.banner{height:680px;background:linear-gradient(90deg,rgba(5,5,5,.96),rgba(5,5,5,.52)),url('../IMAGENES/FONDOS/fondo\ frecuencia\ 1.jpeg');background-size:cover;background-position:center;display:flex;align-items:center;padding-left:80px}.texto-banner{max-width:650px;animation:entrada 1s ease}.texto-banner h1{font-family:'Intan',Arial,sans-serif;font-size:70px;font-weight:700;text-transform:uppercase;background:linear-gradient(90deg,#fff,#ff8700,#556b2f);-webkit-background-clip:text;color:transparent}.titulo-portada{font-family:'Intan',Arial,sans-serif;font-size:42px;font-weight:800;line-height:1.2;margin:20px 0;text-transform:uppercase;background:linear-gradient(90deg,#fff,#ff8700,#556b2f);-webkit-background-clip:text;color:transparent;max-width:650px}.subtexto-banner{font-size:18px;color:#ddd;max-width:600px;line-height:1.6;margin:25px 0}button,.btn-contenido,.btn-entrevista,.botones a{display:inline-block;background:linear-gradient(90deg,#6d28ff,#ff8700,#556b2f);border:none;color:#fff;font-weight:800;padding:14px 34px;border-radius:50px;text-decoration:none;cursor:pointer;transition:.3s}button:hover,.btn-contenido:hover,.btn-entrevista:hover,.botones a:hover{transform:scale(1.06);box-shadow:0 0 24px rgba(255,135,0,.45)}
+h2{font-family:'Intan',Arial,sans-serif;font-size:42px;font-weight:800;text-align:center;margin-bottom:50px;text-transform:uppercase}.destacado h2{background:linear-gradient(90deg,#6d28ff,#9d7cff);-webkit-background-clip:text;color:transparent}.entrevistas h2{background:linear-gradient(90deg,#ff8700,#ffb347);-webkit-background-clip:text;color:transparent}.tendencias h2{background:linear-gradient(90deg,#556b2f,#9acd32);-webkit-background-clip:text;color:transparent}.artista-semana h2{background:linear-gradient(90deg,#fff,#ff8700,#556b2f);-webkit-background-clip:text;color:transparent}.redes h2{color:#fff}
+.cards,.videos{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:35px}.card,.video-card,.artista{background:#111;border-radius:25px;overflow:hidden;transition:.4s;border:1px solid rgba(255,255,255,.05)}.card:hover,.video-card:hover,.artista:hover{transform:translateY(-10px);box-shadow:0 20px 40px rgba(109,40,255,.30)}.card img{width:100%;height:230px;object-fit:cover}.card h3,.video-card h3,.artista h3{font-family:'Intan',Arial,sans-serif;font-size:24px;padding:20px}.card p,.video-card p{padding:0 20px 25px;color:#bbb;line-height:1.5}.btn-contenido,.btn-entrevista{margin:0 20px 25px;padding:12px 25px}iframe{width:100%;height:220px;border-radius:20px;border:2px solid #6d28ff}.video-card{padding:0 0 20px}.video-card h3{padding-bottom:10px}
+.tendencia-box{display:flex;justify-content:center;gap:25px;flex-wrap:wrap}.tendencia-box div{background:#111;padding:30px;border-radius:25px;border-left:5px solid #ff8700;transition:.3s}.tendencia-box div:hover{transform:translateY(-10px);background:#181818;border-left-color:#556b2f}.descripcion-voto{text-align:center;color:#ccc;margin-top:-30px;margin-bottom:50px;font-size:18px}.votacion{display:grid;grid-template-columns:repeat(4,1fr);gap:25px}.artista{padding:25px;text-align:center}.artista:hover{border:2px solid #ff8700}.artista img{width:150px;height:150px;border-radius:50%;object-fit:cover;border:5px solid #6d28ff}.artista h3{padding:0;margin:20px 0}.barra{height:12px;background:#333;border-radius:20px;overflow:hidden;margin:15px 0}.barra span{display:block;height:100%;background:linear-gradient(90deg,#6d28ff,#ff8700,#556b2f)}
+.redes{text-align:center;background:#111}.redes p{color:#ccc;margin-bottom:25px}.botones a{margin:10px;padding:15px 35px}footer{background:#000;padding:50px 20px;text-align:center;color:#aaa;border-top:1px solid rgba(109,40,255,.3)}.footer-logo img{width:100px;margin-bottom:20px}.copyright{font-size:14px;margin-top:10px}.page-intro{text-align:center;color:#bbb;max-width:800px;margin:0 auto 45px;line-height:1.6}.antonados-box{background:linear-gradient(135deg,#111,#1b130b);border:1px solid rgba(255,135,0,.25);border-radius:30px;padding:35px;text-align:center;max-width:950px;margin:0 auto}.antonados-box p{color:#ddd;line-height:1.6;margin-bottom:20px}
+@keyframes entrada{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:900px){header{padding:0 22px}.logo img{width:70px}.logo-canal img{width:62px}nav{display:none}.banner{height:auto;min-height:620px;padding:140px 28px 70px}.texto-banner h1{font-size:45px}.titulo-portada{font-size:30px}section{padding:55px 25px}.votacion{grid-template-columns:1fr}.cards,.videos{grid-template-columns:1fr}}
+
+/* =========================
+ANTONADOS
+========================= */
+
+.antonados-banner{
+background:
+linear-gradient(90deg,rgba(5,5,5,.96),rgba(5,5,5,.50)),
+url("IMAGENES/FONDOS/fondo-principal.jpg");
+background-size:cover;
+background-position:center;
+}
+
+.antonados{
+background:#050505;
+}
+
+.antonados .page-intro{
+text-align:center;
+color:#ccc;
+max-width:850px;
+margin:0 auto 45px;
+line-height:1.6;
+font-size:18px;
+}
+
+.antonados .card{
+border:1px solid rgba(255,135,0,.25);
+}
+
+.antonados .card:hover{
+box-shadow:0 20px 45px rgba(255,135,0,.25);
+border-color:#ff8700;
+}
+
+/* =========================================
+   BOTONES DE TENDENCIAS
+========================================= */
+
+.tendencia-box {
+  width: min(1100px, 92%);
+  margin: 70px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  align-items: stretch;
+}
+
+.tendencia-box a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 72px;
+  padding: 18px 20px;
+
+  color: #ffffff;
+  font-family: "acumin-pro", Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+
+  background:
+    linear-gradient(#111111, #111111) padding-box,
+    linear-gradient(
+      120deg,
+      #7b2cff,
+      #ff7a00,
+      #778b35
+    ) border-box;
+
+  border: 2px solid transparent;
+  border-radius: 18px;
+
+  box-shadow:
+    0 10px 25px rgba(123, 44, 255, 0.18),
+    0 8px 22px rgba(255, 122, 0, 0.12);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease;
+}
+
+.tendencia-box a:hover {
+  transform: translateY(-6px) scale(1.02);
+
+  background:
+    linear-gradient(
+      120deg,
+      rgba(123, 44, 255, 0.28),
+      rgba(255, 122, 0, 0.25),
+      rgba(119, 139, 53, 0.25)
+    ) padding-box,
+    linear-gradient(
+      120deg,
+      #7b2cff,
+      #ff7a00,
+      #778b35
+    ) border-box;
+
+  box-shadow:
+    0 15px 35px rgba(123, 44, 255, 0.3),
+    0 12px 30px rgba(255, 122, 0, 0.2);
+}
+
+.tendencia-box a:active {
+  transform: scale(0.98);
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+  .tendencia-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* CELULAR */
+
+@media (max-width: 560px) {
+  .tendencia-box {
+    grid-template-columns: 1fr;
+    margin: 45px auto;
+  }
+
+  .tendencia-box a {
+    min-height: 62px;
+    font-size: 16px;
+  }
+}

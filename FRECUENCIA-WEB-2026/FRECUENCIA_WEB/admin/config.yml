@@ -1,0 +1,241 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "IMAGENES/uploads"
+public_folder: "/IMAGENES/uploads"
+
+collections:
+
+  # ========================================
+  # CONFIGURACIÓN DE LA PÁGINA PRINCIPAL
+  # ========================================
+
+  - name: "configuracion"
+    label: "Página principal"
+    files:
+
+      - label: "Portada"
+        name: "inicio"
+        file: "content/inicio.json"
+        format: "json"
+
+        fields:
+          - label: "Título principal"
+            name: "titulo"
+            widget: "string"
+
+          - label: "Subtítulo"
+            name: "subtitulo"
+            widget: "text"
+
+          - label: "Texto del botón"
+            name: "boton"
+            widget: "string"
+
+          - label: "Enlace del botón"
+            name: "enlace_boton"
+            widget: "string"
+
+          - label: "Imagen de fondo"
+            name: "fondo"
+            widget: "image"
+
+
+  # ========================================
+  # NOTICIAS
+  # ========================================
+
+  - name: "noticias"
+    label: "Noticias"
+    folder: "content/noticias"
+    create: true
+    extension: "json"
+    format: "json"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+
+    fields:
+      - label: "Título"
+        name: "title"
+        widget: "string"
+
+      - label: "Fecha"
+        name: "date"
+        widget: "datetime"
+
+      - label: "Categoría"
+        name: "category"
+        widget: "select"
+        options:
+          - "Música"
+          - "Cultura Pop"
+          - "Viral"
+          - "Eventos"
+          - "Influencers"
+
+      - label: "Imagen"
+        name: "image"
+        widget: "image"
+
+      - label: "Resumen"
+        name: "summary"
+        widget: "text"
+
+      - label: "Contenido"
+        name: "body"
+        widget: "richtext"
+
+
+  # ========================================
+  # ENTREVISTAS
+  # ========================================
+
+  - name: "entrevistas"
+    label: "Entrevistas"
+    folder: "content/entrevistas"
+    create: true
+    extension: "json"
+    format: "json"
+    slug: "{{slug}}"
+
+    fields:
+      - label: "Nombre del invitado"
+        name: "invitado"
+        widget: "string"
+
+      - label: "Título de la entrevista"
+        name: "titulo"
+        widget: "string"
+
+      - label: "Imagen"
+        name: "imagen"
+        widget: "image"
+
+      - label: "Enlace de YouTube"
+        name: "youtube"
+        widget: "string"
+
+      - label: "Descripción"
+        name: "descripcion"
+        widget: "text"
+
+      - label: "Fecha"
+        name: "fecha"
+        widget: "datetime"
+
+
+  # ========================================
+  # ARTISTAS
+  # ========================================
+
+  - name: "artistas"
+    label: "Artistas"
+    folder: "content/artistas"
+    create: true
+    extension: "json"
+    format: "json"
+    slug: "{{slug}}"
+
+    fields:
+      - label: "Nombre"
+        name: "nombre"
+        widget: "string"
+
+      - label: "Fotografía"
+        name: "imagen"
+        widget: "image"
+
+      - label: "Biografía"
+        name: "biografia"
+        widget: "richtext"
+
+      - label: "Instagram"
+        name: "instagram"
+        widget: "string"
+        required: false
+
+      - label: "TikTok"
+        name: "tiktok"
+        widget: "string"
+        required: false
+
+      - label: "YouTube"
+        name: "youtube"
+        widget: "string"
+        required: false
+
+
+  # ========================================
+  # ANTONADOS
+  # ========================================
+
+  - name: "antonados"
+    label: "Antonados"
+    folder: "content/antonados"
+    create: true
+    extension: "json"
+    format: "json"
+    slug: "{{slug}}"
+
+    fields:
+      - label: "Invitado"
+        name: "invitado"
+        widget: "string"
+
+      - label: "Título"
+        name: "titulo"
+        widget: "string"
+
+      - label: "Miniatura"
+        name: "imagen"
+        widget: "image"
+
+      - label: "Video"
+        name: "video"
+        widget: "string"
+
+      - label: "Descripción"
+        name: "descripcion"
+        widget: "text"
+
+      - label: "Tipo de dinámica"
+        name: "dinamica"
+        widget: "select"
+        options:
+          - "Polígrafo"
+          - "Shot"
+          - "Preguntas rápidas"
+          - "Entrevista"
+
+
+  # ========================================
+  # REDES SOCIALES
+  # ========================================
+
+  - name: "redes"
+    label: "Redes sociales"
+    files:
+
+      - label: "Enlaces de redes"
+        name: "enlaces"
+        file: "content/redes.json"
+        format: "json"
+
+        fields:
+          - label: "Instagram"
+            name: "instagram"
+            widget: "string"
+
+          - label: "TikTok"
+            name: "tiktok"
+            widget: "string"
+
+          - label: "YouTube"
+            name: "youtube"
+            widget: "string"
+
+          - label: "Facebook"
+            name: "facebook"
+            widget: "string"
+            required: false
+            
